@@ -1,0 +1,1138 @@
+[
+    {
+        "id": "f328b7e56afe7dde",
+        "type": "tab",
+        "label": "Industrial IoT Master Data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0ea99ab57f147650",
+        "type": "group",
+        "z": "f328b7e56afe7dde",
+        "name": "Employee",
+        "style": {
+            "fill": "#ffff00",
+            "label": true
+        },
+        "nodes": [
+            "24bb01520d01f190",
+            "fd49382d6f00544a",
+            "cf5a8998cc8311b6",
+            "b15422c85a53e28f",
+            "7cce5b427d410beb",
+            "1d3dff1c7d186ebd",
+            "b2f6cfa3e73f0a6c",
+            "c6ef9dca9793fbc0",
+            "48c55cab70fe8140",
+            "c5bcb7a23868db47",
+            "dee36541511bcdf6",
+            "4e758068024d9032",
+            "5522d2e2d1039a1f",
+            "8d8fbd33fb0e2754",
+            "0394cdb4fed16f38"
+        ],
+        "x": 214,
+        "y": 119,
+        "w": 1312,
+        "h": 322
+    },
+    {
+        "id": "327af6b298c3ad53",
+        "type": "group",
+        "z": "f328b7e56afe7dde",
+        "name": "Machine",
+        "style": {
+            "fill": "#6f2fa0",
+            "label": true
+        },
+        "nodes": [
+            "443f0fa2b5239f07",
+            "27ff38011f5e3af2",
+            "0976061782697fe8",
+            "5be597dbb5eab12a",
+            "8172f6218d40a7be",
+            "88a35f61fc4da74b",
+            "384b36e0d7618933",
+            "fba24fb329d75868",
+            "5653018b61dbf11c"
+        ],
+        "x": 214,
+        "y": 539,
+        "w": 1152,
+        "h": 222
+    },
+    {
+        "id": "537797afc40acc5e",
+        "type": "group",
+        "z": "f328b7e56afe7dde",
+        "name": "Product",
+        "style": {
+            "fill": "#ff0000",
+            "label": true
+        },
+        "nodes": [
+            "a84964da19199607",
+            "24f6f71a189f0e27",
+            "bf384029b7d051a2",
+            "1297d80c4f22bc2a",
+            "fc32c65324fbafbe",
+            "675268130aea660a",
+            "62b190e04ce09a11",
+            "2d7f8d9935f4bd41",
+            "3ae0daed59f8a8d8",
+            "11d5465f3140dad7",
+            "f19b0d3710782805"
+        ],
+        "x": 214,
+        "y": 859,
+        "w": 1292,
+        "h": 242
+    },
+    {
+        "id": "24bb01520d01f190",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "First name",
+        "label": "First name",
+        "tooltip": "",
+        "group": "e5777459d23f0fd4",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "b2f6cfa3e73f0a6c"
+            ]
+        ]
+    },
+    {
+        "id": "fd49382d6f00544a",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "Last name",
+        "label": "Last name",
+        "tooltip": "",
+        "group": "e5777459d23f0fd4",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 310,
+        "y": 220,
+        "wires": [
+            [
+                "c6ef9dca9793fbc0"
+            ]
+        ]
+    },
+    {
+        "id": "cf5a8998cc8311b6",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "Employee Code",
+        "label": "Employee Code",
+        "tooltip": "",
+        "group": "e5777459d23f0fd4",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "48c55cab70fe8140"
+            ]
+        ]
+    },
+    {
+        "id": "b15422c85a53e28f",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "Telephone",
+        "label": "Telephone",
+        "tooltip": "",
+        "group": "e5777459d23f0fd4",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "c5bcb7a23868db47"
+            ]
+        ]
+    },
+    {
+        "id": "7cce5b427d410beb",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "Department",
+        "label": "Department",
+        "tooltip": "",
+        "group": "e5777459d23f0fd4",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "dee36541511bcdf6"
+            ]
+        ]
+    },
+    {
+        "id": "1d3dff1c7d186ebd",
+        "type": "ui_button",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "",
+        "group": "e5777459d23f0fd4",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "บันทึก",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1090,
+        "y": 280,
+        "wires": [
+            [
+                "5522d2e2d1039a1f"
+            ]
+        ]
+    },
+    {
+        "id": "b2f6cfa3e73f0a6c",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "first_name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "first_name",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 160,
+        "wires": [
+            [
+                "0394cdb4fed16f38"
+            ]
+        ]
+    },
+    {
+        "id": "c6ef9dca9793fbc0",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "last_name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "last_name",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 220,
+        "wires": [
+            [
+                "0394cdb4fed16f38"
+            ]
+        ]
+    },
+    {
+        "id": "48c55cab70fe8140",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "employee_code",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "employee_code",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 280,
+        "wires": [
+            [
+                "0394cdb4fed16f38"
+            ]
+        ]
+    },
+    {
+        "id": "c5bcb7a23868db47",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "tel",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "tel",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "0394cdb4fed16f38"
+            ]
+        ]
+    },
+    {
+        "id": "dee36541511bcdf6",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "department",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "department",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "0394cdb4fed16f38"
+            ]
+        ]
+    },
+    {
+        "id": "4e758068024d9032",
+        "type": "function",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "insert_employee",
+        "func": "var first_name = msg.payload.first_name;\nvar last_name = msg.payload.last_name;\nvar emp_code = msg.payload.employee_code;\nvar tel = msg.payload.tel;\nvar department = msg.payload.department;\n\n\nmsg.topic = \"call iot_course.insert_emp('\"+ first_name + \"','\" + last_name + \"','\" + emp_code + \"','\" + tel + \"','\" + department + \"');\"\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 360,
+        "wires": [
+            [
+                "1d3dff1c7d186ebd"
+            ]
+        ]
+    },
+    {
+        "id": "5522d2e2d1039a1f",
+        "type": "mysql",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1390,
+        "y": 280,
+        "wires": [
+            [
+                "b730cb848ffb9561"
+            ]
+        ]
+    },
+    {
+        "id": "8d8fbd33fb0e2754",
+        "type": "json",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "Convert to JavaScript Object",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 920,
+        "y": 360,
+        "wires": [
+            [
+                "4e758068024d9032"
+            ]
+        ]
+    },
+    {
+        "id": "0394cdb4fed16f38",
+        "type": "join",
+        "z": "f328b7e56afe7dde",
+        "g": "0ea99ab57f147650",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 870,
+        "y": 280,
+        "wires": [
+            [
+                "8d8fbd33fb0e2754"
+            ]
+        ]
+    },
+    {
+        "id": "443f0fa2b5239f07",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "327af6b298c3ad53",
+        "name": "Machine Code",
+        "label": "Machine Code",
+        "tooltip": "",
+        "group": "1e0fc3ae2f616487",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 320,
+        "y": 580,
+        "wires": [
+            [
+                "0976061782697fe8"
+            ]
+        ]
+    },
+    {
+        "id": "27ff38011f5e3af2",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "327af6b298c3ad53",
+        "name": "Machine Name",
+        "label": "Machine Name",
+        "tooltip": "",
+        "group": "1e0fc3ae2f616487",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 320,
+        "y": 660,
+        "wires": [
+            [
+                "5be597dbb5eab12a"
+            ]
+        ]
+    },
+    {
+        "id": "0976061782697fe8",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "327af6b298c3ad53",
+        "name": "machine_code",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "machine_code",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 580,
+        "wires": [
+            [
+                "8172f6218d40a7be"
+            ]
+        ]
+    },
+    {
+        "id": "5be597dbb5eab12a",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "327af6b298c3ad53",
+        "name": "machine_name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "machine_name",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 660,
+        "wires": [
+            [
+                "8172f6218d40a7be"
+            ]
+        ]
+    },
+    {
+        "id": "8172f6218d40a7be",
+        "type": "join",
+        "z": "f328b7e56afe7dde",
+        "g": "327af6b298c3ad53",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 690,
+        "y": 620,
+        "wires": [
+            [
+                "88a35f61fc4da74b"
+            ]
+        ]
+    },
+    {
+        "id": "88a35f61fc4da74b",
+        "type": "json",
+        "z": "f328b7e56afe7dde",
+        "g": "327af6b298c3ad53",
+        "name": "Convert to JavaScript Object",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 760,
+        "y": 720,
+        "wires": [
+            [
+                "384b36e0d7618933"
+            ]
+        ]
+    },
+    {
+        "id": "384b36e0d7618933",
+        "type": "function",
+        "z": "f328b7e56afe7dde",
+        "g": "327af6b298c3ad53",
+        "name": "insert_machine",
+        "func": "var machine_code = msg.payload.machine_code;\nvar machine_name = msg.payload.machine_name;\n\n\nmsg.topic = \"call iot_course.insert_machine('\"+ machine_code + \"','\" + machine_name + \"');\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 620,
+        "wires": [
+            [
+                "fba24fb329d75868"
+            ]
+        ]
+    },
+    {
+        "id": "fba24fb329d75868",
+        "type": "ui_button",
+        "z": "f328b7e56afe7dde",
+        "g": "327af6b298c3ad53",
+        "name": "",
+        "group": "1e0fc3ae2f616487",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "บันทึก",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1010,
+        "y": 720,
+        "wires": [
+            [
+                "5653018b61dbf11c"
+            ]
+        ]
+    },
+    {
+        "id": "5653018b61dbf11c",
+        "type": "mysql",
+        "z": "f328b7e56afe7dde",
+        "g": "327af6b298c3ad53",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1230,
+        "y": 620,
+        "wires": [
+            [
+                "b730cb848ffb9561"
+            ]
+        ]
+    },
+    {
+        "id": "a84964da19199607",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "Product Code",
+        "label": "Product Code",
+        "tooltip": "",
+        "group": "1b9d73ee7b7d9037",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 320,
+        "y": 900,
+        "wires": [
+            [
+                "bf384029b7d051a2"
+            ]
+        ]
+    },
+    {
+        "id": "24f6f71a189f0e27",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "Product Name",
+        "label": "Product Name",
+        "tooltip": "",
+        "group": "1b9d73ee7b7d9037",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 320,
+        "y": 980,
+        "wires": [
+            [
+                "1297d80c4f22bc2a"
+            ]
+        ]
+    },
+    {
+        "id": "bf384029b7d051a2",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "product_code",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "product_code",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 900,
+        "wires": [
+            [
+                "fc32c65324fbafbe"
+            ]
+        ]
+    },
+    {
+        "id": "1297d80c4f22bc2a",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "product_name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "product_name",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 980,
+        "wires": [
+            [
+                "fc32c65324fbafbe"
+            ]
+        ]
+    },
+    {
+        "id": "fc32c65324fbafbe",
+        "type": "join",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 710,
+        "y": 980,
+        "wires": [
+            [
+                "675268130aea660a"
+            ]
+        ]
+    },
+    {
+        "id": "675268130aea660a",
+        "type": "json",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "Convert to JavaScript Object",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 820,
+        "y": 1060,
+        "wires": [
+            [
+                "62b190e04ce09a11"
+            ]
+        ]
+    },
+    {
+        "id": "62b190e04ce09a11",
+        "type": "function",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "insert_product",
+        "func": "var product_code = msg.payload.product_code;\nvar product_name = msg.payload.product_name;\nvar std_cycletime = msg.payload.std_cycletime;\n\n\nmsg.topic = \"call iot_course.insert_product('\"+ product_code + \"','\" + product_name + \"',\" + std_cycletime + \");\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 980,
+        "wires": [
+            [
+                "11d5465f3140dad7"
+            ]
+        ]
+    },
+    {
+        "id": "2d7f8d9935f4bd41",
+        "type": "ui_text_input",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "STD Cycletime",
+        "label": "STD Cycletime",
+        "tooltip": "",
+        "group": "1b9d73ee7b7d9037",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 320,
+        "y": 1060,
+        "wires": [
+            [
+                "3ae0daed59f8a8d8"
+            ]
+        ]
+    },
+    {
+        "id": "3ae0daed59f8a8d8",
+        "type": "change",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "std_cycletime",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "std_cycletime",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 1060,
+        "wires": [
+            [
+                "fc32c65324fbafbe"
+            ]
+        ]
+    },
+    {
+        "id": "11d5465f3140dad7",
+        "type": "ui_button",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "name": "",
+        "group": "1b9d73ee7b7d9037",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "บันทึก",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1150,
+        "y": 980,
+        "wires": [
+            [
+                "f19b0d3710782805"
+            ]
+        ]
+    },
+    {
+        "id": "f19b0d3710782805",
+        "type": "mysql",
+        "z": "f328b7e56afe7dde",
+        "g": "537797afc40acc5e",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1370,
+        "y": 980,
+        "wires": [
+            [
+                "b730cb848ffb9561"
+            ]
+        ]
+    },
+    {
+        "id": "b730cb848ffb9561",
+        "type": "link out",
+        "z": "f328b7e56afe7dde",
+        "name": "Master data update",
+        "mode": "link",
+        "links": [
+            "f59b7eb9d1add545"
+        ],
+        "x": 1535,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "e9ef44b19999bc5d",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1e0fc3ae2f616487",
+        "order": 1,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "7a1e035b408cf88f",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1e0fc3ae2f616487",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4f09b8a1237e0cbc",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1e0fc3ae2f616487",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "ee3a2cbf9d40d2b3",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1e0fc3ae2f616487",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4c5c191d28121689",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1e0fc3ae2f616487",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "72323eab1396680e",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1e0fc3ae2f616487",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8cca18ad707755d8",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1b9d73ee7b7d9037",
+        "order": 3,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "f26625f0a2196f27",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1b9d73ee7b7d9037",
+        "order": 5,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "1bd4ce747e6beeeb",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1b9d73ee7b7d9037",
+        "order": 6,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "900ac174d7b7bb4d",
+        "type": "ui_spacer",
+        "z": "f328b7e56afe7dde",
+        "name": "spacer",
+        "group": "1b9d73ee7b7d9037",
+        "order": 8,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "e5777459d23f0fd4",
+        "type": "ui_group",
+        "name": "Employee",
+        "tab": "33f0b1eb94f8b252",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c953980bf31e16d2",
+        "type": "MySQLdatabase",
+        "name": "Industrial IoT Database",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "industrial_iot_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "1e0fc3ae2f616487",
+        "type": "ui_group",
+        "name": "Machine",
+        "tab": "33f0b1eb94f8b252",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1b9d73ee7b7d9037",
+        "type": "ui_group",
+        "name": "Product",
+        "tab": "33f0b1eb94f8b252",
+        "order": 3,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "33f0b1eb94f8b252",
+        "type": "ui_tab",
+        "name": "Industrial IoT Master Data",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
