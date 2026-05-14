@@ -1,0 +1,2227 @@
+[
+    {
+        "id": "f06a68d491387491",
+        "type": "tab",
+        "label": "Industrial IoT Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c39d2f3a5c82f007",
+        "type": "group",
+        "z": "f06a68d491387491",
+        "name": "Job detail",
+        "style": {
+            "fill": "#0070c0",
+            "label": true
+        },
+        "nodes": [
+            "021068907e44c828",
+            "6934d0d6aca029ce",
+            "ab2b89d8da463e88",
+            "26c34b3328c2c714",
+            "f5588c41ddab123b",
+            "dcfaa3a1700fa61f",
+            "47f159a49c132d56",
+            "2f95afc0adf4570f",
+            "86fe06d0bbf09ddf",
+            "61e78f06667836a6",
+            "850189c1d227713e",
+            "ae73d2c03ec758c7",
+            "9b1491103bca6b33",
+            "0fae57555eedd2c6",
+            "b9141129b83fa4cc",
+            "87d0661f8a9cf210",
+            "980d93d35c3ce820",
+            "d76378d28423faf3",
+            "031657c9eea42a65",
+            "b292761652b9105c",
+            "5b74372551d6d4b9",
+            "471e085aa89b1279",
+            "340ff9e32bc4e66f",
+            "48d91de463ab5075",
+            "96d621c69de08e4e",
+            "2af24fd2a73451a6",
+            "1a3ae5060751ab2e",
+            "395a99b3724d11eb",
+            "62239d404497e652",
+            "aadbd8eebe9e46b7",
+            "7fc981636f861922",
+            "f59b7eb9d1add545"
+        ],
+        "x": 434,
+        "y": 99,
+        "w": 1172,
+        "h": 442
+    },
+    {
+        "id": "e64a943abad2f087",
+        "type": "group",
+        "z": "f06a68d491387491",
+        "name": "Andon Board",
+        "style": {
+            "fill": "#92d04f",
+            "label": true
+        },
+        "nodes": [
+            "6db91589099201a9",
+            "044f50c2f06f3473",
+            "4f98972455535dfe",
+            "137a690f49e398c3",
+            "ef8a8ba8fd4a9cbc",
+            "d6cd01823ab104ba",
+            "380228313253796d",
+            "bd4ff2aae96ca4ed",
+            "1b4dbb3e23ca2dac",
+            "25c64f4717c287ad",
+            "05d13a748f2607ec",
+            "c6c92d39b0ba7eb7",
+            "7b3e363fea3563d3",
+            "942ceeed881be843",
+            "a340e6ddab7cd6e0",
+            "9998ee802a70d974",
+            "314d605c0a67fb6d",
+            "a0c199a846805dab",
+            "c296e658080e251f",
+            "ac4052759f928d1e",
+            "204af9c2e662ae6d",
+            "f74239dddd10fd9d",
+            "c1533e9cc98d8018",
+            "be84f65cf7148e4b"
+        ],
+        "x": 434,
+        "y": 619,
+        "w": 1372,
+        "h": 402
+    },
+    {
+        "id": "a612007cedc4cfd3",
+        "type": "group",
+        "z": "f06a68d491387491",
+        "name": "Top 3 Breakdown",
+        "style": {
+            "fill": "#ffC000",
+            "label": true
+        },
+        "nodes": [
+            "3b891dba11d18e62",
+            "a722de244ba893ee",
+            "9e4ba17449a277ac",
+            "5b94a3c2fd9e8bc9",
+            "da464fba1c2891e6"
+        ],
+        "x": 454,
+        "y": 1139,
+        "w": 1032,
+        "h": 82
+    },
+    {
+        "id": "500f761e7104b745",
+        "type": "group",
+        "z": "f06a68d491387491",
+        "name": "Breakdown BTN",
+        "style": {
+            "fill": "#6f2fa0",
+            "label": true
+        },
+        "nodes": [
+            "3fed4bd1c7b0fc7f",
+            "6cbcc16e66aa0379",
+            "ee9641ea2bbcefc0",
+            "ef679d2b77a8b3fe",
+            "511d047b7c88c311",
+            "7f0849f1b682b896",
+            "1c9990fae41ca12f",
+            "601051a24f3b803a",
+            "17f9df893f66f351",
+            "451c9de9f569dbd3"
+        ],
+        "x": 454,
+        "y": 1319,
+        "w": 1312,
+        "h": 162
+    },
+    {
+        "id": "49abec11d71f0b4f",
+        "type": "group",
+        "z": "f06a68d491387491",
+        "name": "Breakdown Report",
+        "style": {
+            "fill": "#ff7f7f",
+            "label": true
+        },
+        "nodes": [
+            "34feab4c666dd571",
+            "378dae75bc8a9cfe",
+            "5d5bfb98aa62d372",
+            "bc8780b20f14e356"
+        ],
+        "x": 454,
+        "y": 1579,
+        "w": 792,
+        "h": 82
+    },
+    {
+        "id": "f7344f06e635ac31",
+        "type": "group",
+        "z": "f06a68d491387491",
+        "name": "Input breakdown case",
+        "style": {
+            "fill": "#777777",
+            "label": true
+        },
+        "nodes": [
+            "8b8294b952ee4a44",
+            "4af685349eb09983",
+            "8e60efe68cb84b11",
+            "134b15709f154b75",
+            "d747a6e60c8b2fb3",
+            "261e9d8772d9bbb4",
+            "78cbde028e8393b1",
+            "14d9c9a8277acafa",
+            "ced9cdf3c1795c36",
+            "b3cde6c81b7fb524",
+            "3572b82f4b9e62c0",
+            "205fe9d90d310a3d",
+            "fa7f0e8b4e5324a2",
+            "fa4ecf7a3c819eb7",
+            "b69a3b4209e667af"
+        ],
+        "x": 454,
+        "y": 1759,
+        "w": 1252,
+        "h": 342
+    },
+    {
+        "id": "6db91589099201a9",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 950,
+        "y": 660,
+        "wires": [
+            [
+                "05d13a748f2607ec",
+                "a0c199a846805dab",
+                "c1533e9cc98d8018",
+                "395a99b3724d11eb"
+            ]
+        ]
+    },
+    {
+        "id": "044f50c2f06f3473",
+        "type": "ui_button",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "",
+        "group": "613bd813100a6983",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Insert Actual",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 530,
+        "y": 660,
+        "wires": [
+            [
+                "4f98972455535dfe"
+            ]
+        ]
+    },
+    {
+        "id": "4f98972455535dfe",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "insert_actual",
+        "func": "var query = \"call insert_actual();\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 660,
+        "wires": [
+            [
+                "6db91589099201a9"
+            ]
+        ]
+    },
+    {
+        "id": "137a690f49e398c3",
+        "type": "ui_button",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "",
+        "group": "613bd813100a6983",
+        "order": 2,
+        "width": 6,
+        "height": 2,
+        "passthru": false,
+        "label": "Insert NG",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 520,
+        "y": 760,
+        "wires": [
+            [
+                "d6cd01823ab104ba"
+            ]
+        ]
+    },
+    {
+        "id": "ef8a8ba8fd4a9cbc",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 950,
+        "y": 760,
+        "wires": [
+            [
+                "05d13a748f2607ec",
+                "ac4052759f928d1e",
+                "c1533e9cc98d8018"
+            ]
+        ]
+    },
+    {
+        "id": "d6cd01823ab104ba",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "insert_ng",
+        "func": "var query = \"call insert_ng();\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 760,
+        "wires": [
+            [
+                "ef8a8ba8fd4a9cbc"
+            ]
+        ]
+    },
+    {
+        "id": "380228313253796d",
+        "type": "ui_button",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "",
+        "group": "613bd813100a6983",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 860,
+        "wires": [
+            [
+                "1b4dbb3e23ca2dac"
+            ]
+        ]
+    },
+    {
+        "id": "bd4ff2aae96ca4ed",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 950,
+        "y": 860,
+        "wires": [
+            [
+                "05d13a748f2607ec",
+                "a0c199a846805dab",
+                "ac4052759f928d1e",
+                "c1533e9cc98d8018"
+            ]
+        ]
+    },
+    {
+        "id": "1b4dbb3e23ca2dac",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "reset_data",
+        "func": "var query = \"call reset_data();\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 860,
+        "wires": [
+            [
+                "bd4ff2aae96ca4ed"
+            ]
+        ]
+    },
+    {
+        "id": "25c64f4717c287ad",
+        "type": "ui_template",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "group": "fedd8e36bb3a0683",
+        "name": "",
+        "order": 1,
+        "width": 6,
+        "height": 8,
+        "format": "<html>\n   <head>\n          <title> {{ title }}</title>\n   </head>\n   <body>\n        <table border = \"1\">\n            <tr>\n                <th>Actual</th>\n                <th>ng</th>\n                <th>Timestamp</th>\n            </tr>\n            <tr ng-repeat = \"x in msg.payload\">\n                <td align=\"center\">{{x.actual}}</td>\n                <td align=\"center\">{{x.ng}}</td>\n                <td align=\"center\">{{x.time_stamp}}</td>\n            </tr>\n        </table>\n   </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1360,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "05d13a748f2607ec",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "Query Data",
+        "func": "var query = \"SELECT * FROM actual_data order by id desc limit 10;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 980,
+        "wires": [
+            [
+                "7b3e363fea3563d3"
+            ]
+        ]
+    },
+    {
+        "id": "c6c92d39b0ba7eb7",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1170,
+        "y": 980,
+        "wires": [
+            [
+                "25c64f4717c287ad"
+            ]
+        ]
+    },
+    {
+        "id": "7b3e363fea3563d3",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 970,
+        "y": 980,
+        "wires": [
+            [
+                "c6c92d39b0ba7eb7"
+            ]
+        ]
+    },
+    {
+        "id": "3fed4bd1c7b0fc7f",
+        "type": "ui_button",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "name": "",
+        "group": "a7564ea35dc91ab5",
+        "order": 1,
+        "width": 6,
+        "height": 3,
+        "passthru": false,
+        "label": "Breakdown Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "orange",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 1360,
+        "wires": [
+            [
+                "ef679d2b77a8b3fe"
+            ]
+        ]
+    },
+    {
+        "id": "6cbcc16e66aa0379",
+        "type": "ui_button",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "name": "",
+        "group": "a7564ea35dc91ab5",
+        "order": 2,
+        "width": 6,
+        "height": 3,
+        "passthru": false,
+        "label": "Breakdown Finish",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "orange",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 570,
+        "y": 1440,
+        "wires": [
+            [
+                "ee9641ea2bbcefc0"
+            ]
+        ]
+    },
+    {
+        "id": "ee9641ea2bbcefc0",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "name": "breakdown_update",
+        "func": "var query = \"call breakdown_update();\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 1440,
+        "wires": [
+            [
+                "7f0849f1b682b896",
+                "a722de244ba893ee"
+            ]
+        ]
+    },
+    {
+        "id": "ef679d2b77a8b3fe",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "name": "breakdown_insert",
+        "func": "var query = \"call breakdown_insert();\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 1360,
+        "wires": [
+            [
+                "511d047b7c88c311"
+            ]
+        ]
+    },
+    {
+        "id": "511d047b7c88c311",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1050,
+        "y": 1360,
+        "wires": [
+            [
+                "378dae75bc8a9cfe",
+                "601051a24f3b803a"
+            ]
+        ]
+    },
+    {
+        "id": "7f0849f1b682b896",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1050,
+        "y": 1440,
+        "wires": [
+            [
+                "378dae75bc8a9cfe",
+                "601051a24f3b803a"
+            ]
+        ]
+    },
+    {
+        "id": "34feab4c666dd571",
+        "type": "ui_template",
+        "z": "f06a68d491387491",
+        "g": "49abec11d71f0b4f",
+        "group": "5058971ca123ba53",
+        "name": "",
+        "order": 1,
+        "width": 8,
+        "height": 11,
+        "format": "<html>\n   <head>\n          <title> {{ title }}</title>\n   </head>\n   <body>\n        <table border = \"1\">\n            <tr>\n                <th>Breakdown Start</th>\n                <th>Breakdown Finish</th>\n                <th>Remark</th>\n            </tr>\n            <tr ng-repeat = \"x in msg.payload\">\n                <td align=\"center\">{{x.breakdown_start}}</td>\n                <td align=\"center\">{{x.breakdown_finish}}</td>\n                <td align=\"center\">{{x.remark}}</td>\n            </tr>\n        </table>\n   </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1160,
+        "y": 1620,
+        "wires": [
+            [
+                "a722de244ba893ee"
+            ]
+        ]
+    },
+    {
+        "id": "378dae75bc8a9cfe",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "49abec11d71f0b4f",
+        "name": "Query Data",
+        "func": "var query = \"SELECT * FROM breakdown_data order by id desc limit 20;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1620,
+        "wires": [
+            [
+                "bc8780b20f14e356"
+            ]
+        ]
+    },
+    {
+        "id": "5d5bfb98aa62d372",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "49abec11d71f0b4f",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 970,
+        "y": 1620,
+        "wires": [
+            [
+                "34feab4c666dd571"
+            ]
+        ]
+    },
+    {
+        "id": "bc8780b20f14e356",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "49abec11d71f0b4f",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 770,
+        "y": 1620,
+        "wires": [
+            [
+                "5d5bfb98aa62d372",
+                "4af685349eb09983"
+            ]
+        ]
+    },
+    {
+        "id": "942ceeed881be843",
+        "type": "inject",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 550,
+        "y": 980,
+        "wires": [
+            [
+                "05d13a748f2607ec",
+                "a722de244ba893ee"
+            ]
+        ]
+    },
+    {
+        "id": "64e926e733944a14",
+        "type": "inject",
+        "z": "f06a68d491387491",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 1620,
+        "wires": [
+            [
+                "378dae75bc8a9cfe",
+                "4af685349eb09983",
+                "261e9d8772d9bbb4"
+            ]
+        ]
+    },
+    {
+        "id": "8b8294b952ee4a44",
+        "type": "ui_dropdown",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "",
+        "label": "Time",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "5058971ca123ba53",
+        "order": 2,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1250,
+        "y": 1980,
+        "wires": [
+            [
+                "b3cde6c81b7fb524"
+            ]
+        ]
+    },
+    {
+        "id": "4af685349eb09983",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "get_list_breakdown",
+        "func": "var query = \"call get_list_breakdown();\"\n    msg.topic = String(query)\n    \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1980,
+        "wires": [
+            [
+                "134b15709f154b75"
+            ]
+        ]
+    },
+    {
+        "id": "8e60efe68cb84b11",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "set data list",
+        "func": "var option = []\n\nfor(var i=0;i<msg.payload[0].length;i++){\n    \n    option.push(msg.payload[0][i].breakdown)\n}\n\n\nmsg.options = option\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 1980,
+        "wires": [
+            [
+                "8b8294b952ee4a44"
+            ]
+        ]
+    },
+    {
+        "id": "134b15709f154b75",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 850,
+        "y": 1980,
+        "wires": [
+            [
+                "8e60efe68cb84b11"
+            ]
+        ]
+    },
+    {
+        "id": "d747a6e60c8b2fb3",
+        "type": "ui_dropdown",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "",
+        "label": "Remark",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "5058971ca123ba53",
+        "order": 3,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 1240,
+        "y": 2060,
+        "wires": [
+            [
+                "3572b82f4b9e62c0"
+            ]
+        ]
+    },
+    {
+        "id": "261e9d8772d9bbb4",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "get_list_breakdown_case",
+        "func": "var query = \"call get_list_case();\"\n    msg.topic = String(query)\n    \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 2060,
+        "wires": [
+            [
+                "14d9c9a8277acafa"
+            ]
+        ]
+    },
+    {
+        "id": "78cbde028e8393b1",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "set data list",
+        "func": "var option = []\n\nfor(var i=0;i<msg.payload[0].length;i++){\n    option.push(msg.payload[0][i].case_name)\n    \n}\n\nmsg.options = option\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 2060,
+        "wires": [
+            [
+                "d747a6e60c8b2fb3"
+            ]
+        ]
+    },
+    {
+        "id": "14d9c9a8277acafa",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 850,
+        "y": 2060,
+        "wires": [
+            [
+                "78cbde028e8393b1"
+            ]
+        ]
+    },
+    {
+        "id": "ced9cdf3c1795c36",
+        "type": "ui_button",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "",
+        "group": "5058971ca123ba53",
+        "order": 4,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "Save",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1050,
+        "y": 1880,
+        "wires": [
+            [
+                "b69a3b4209e667af"
+            ]
+        ]
+    },
+    {
+        "id": "b3cde6c81b7fb524",
+        "type": "change",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "time_update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "time_update",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1450,
+        "y": 1980,
+        "wires": [
+            [
+                "205fe9d90d310a3d"
+            ]
+        ]
+    },
+    {
+        "id": "3572b82f4b9e62c0",
+        "type": "change",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "case_update",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "case_update",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1450,
+        "y": 2060,
+        "wires": [
+            [
+                "205fe9d90d310a3d"
+            ]
+        ]
+    },
+    {
+        "id": "205fe9d90d310a3d",
+        "type": "join",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1630,
+        "y": 2020,
+        "wires": [
+            [
+                "fa7f0e8b4e5324a2"
+            ]
+        ]
+    },
+    {
+        "id": "fa7f0e8b4e5324a2",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1450,
+        "y": 1800,
+        "wires": [
+            [
+                "fa4ecf7a3c819eb7"
+            ]
+        ]
+    },
+    {
+        "id": "fa4ecf7a3c819eb7",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "name": "",
+        "func": "var time_update = msg.payload.time_update\nvar case_update = msg.payload.case_update\n\nmsg.topic = \"call update_breakdown('\" + time_update + \"'\" + \",'\" + case_update + \"')\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1280,
+        "y": 1880,
+        "wires": [
+            [
+                "ced9cdf3c1795c36"
+            ]
+        ]
+    },
+    {
+        "id": "b69a3b4209e667af",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "f7344f06e635ac31",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 810,
+        "y": 1880,
+        "wires": [
+            [
+                "378dae75bc8a9cfe"
+            ]
+        ]
+    },
+    {
+        "id": "1c9990fae41ca12f",
+        "type": "ui_led",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "order": 3,
+        "group": "a7564ea35dc91ab5",
+        "width": 6,
+        "height": 4,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#919191",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1570,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "601051a24f3b803a",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "name": "breakdown_status",
+        "func": "var query = \"call breakdown_status();\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 1440,
+        "wires": [
+            [
+                "17f9df893f66f351"
+            ]
+        ]
+    },
+    {
+        "id": "17f9df893f66f351",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1370,
+        "y": 1360,
+        "wires": [
+            [
+                "451c9de9f569dbd3"
+            ]
+        ]
+    },
+    {
+        "id": "451c9de9f569dbd3",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "500f761e7104b745",
+        "name": "breakdown_status_result",
+        "func": "if(msg.payload[0][0].result == \"true\"){\n    msg.payload = true\n} else {\n    msg.payload = false\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1630,
+        "y": 1360,
+        "wires": [
+            [
+                "1c9990fae41ca12f"
+            ]
+        ]
+    },
+    {
+        "id": "3b891dba11d18e62",
+        "type": "ui_chart",
+        "z": "f06a68d491387491",
+        "g": "a612007cedc4cfd3",
+        "name": "",
+        "group": "a7564ea35dc91ab5",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "label": "Top 3 Breakdown",
+        "chartType": "horizontalBar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1370,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a722de244ba893ee",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "a612007cedc4cfd3",
+        "name": "Top 3 breakdown",
+        "func": "var query = \"call get_top_3_breakdown();\"\n    msg.topic = String(query)\n    \nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1180,
+        "wires": [
+            [
+                "9e4ba17449a277ac"
+            ]
+        ]
+    },
+    {
+        "id": "9e4ba17449a277ac",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "a612007cedc4cfd3",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 810,
+        "y": 1180,
+        "wires": [
+            [
+                "5b94a3c2fd9e8bc9"
+            ]
+        ]
+    },
+    {
+        "id": "5b94a3c2fd9e8bc9",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "a612007cedc4cfd3",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1030,
+        "y": 1180,
+        "wires": [
+            [
+                "da464fba1c2891e6"
+            ]
+        ]
+    },
+    {
+        "id": "da464fba1c2891e6",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "a612007cedc4cfd3",
+        "name": "set data",
+        "func": "var total_case = msg.payload[0].length\nvar data_set = []\nvar series = []\nvar data = []\nfor(var i = 0 ; i < total_case ; i++ ){\n    series.push([msg.payload[0][i].remark])\n    data.push([msg.payload[0][i].total])\n}\ndata_set.push({\n    \"series\": series,\n    \"data\": data,\n    \"labels\": [ \"Breakdown case\" ]\n})\n\nmsg.payload = data_set\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 1180,
+        "wires": [
+            [
+                "3b891dba11d18e62"
+            ]
+        ]
+    },
+    {
+        "id": "a340e6ddab7cd6e0",
+        "type": "ui_gauge",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "",
+        "group": "613bd813100a6983",
+        "order": 4,
+        "width": 6,
+        "height": 3,
+        "gtype": "donut",
+        "title": "Actual",
+        "label": "PCS",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1670,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9998ee802a70d974",
+        "type": "ui_gauge",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "",
+        "group": "613bd813100a6983",
+        "order": 5,
+        "width": 6,
+        "height": 3,
+        "gtype": "donut",
+        "title": "NG",
+        "label": "PCS",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1730,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "314d605c0a67fb6d",
+        "type": "ui_gauge",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "",
+        "group": "613bd813100a6983",
+        "order": 6,
+        "width": 6,
+        "height": 3,
+        "gtype": "donut",
+        "title": "Quality",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ff0000",
+            "#e6e600",
+            "#00ff2a"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1660,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "a0c199a846805dab",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "Query Data (Actual)",
+        "func": "var query = \"SELECT actual FROM actual_data order by id desc limit 1;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 660,
+        "wires": [
+            [
+                "204af9c2e662ae6d"
+            ]
+        ]
+    },
+    {
+        "id": "c296e658080e251f",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "Set data",
+        "func": "msg.payload = msg.payload[0].actual\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 660,
+        "wires": [
+            [
+                "a340e6ddab7cd6e0"
+            ]
+        ]
+    },
+    {
+        "id": "ac4052759f928d1e",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "Query Data (NG)",
+        "func": "var query = \"SELECT ng FROM actual_data order by id desc limit 1;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 760,
+        "wires": [
+            [
+                "204af9c2e662ae6d"
+            ]
+        ]
+    },
+    {
+        "id": "204af9c2e662ae6d",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "mydb": "1dd20681aa6945de",
+        "name": "",
+        "x": 1430,
+        "y": 760,
+        "wires": [
+            [
+                "f74239dddd10fd9d",
+                "c296e658080e251f",
+                "be84f65cf7148e4b"
+            ]
+        ]
+    },
+    {
+        "id": "f74239dddd10fd9d",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "Set data",
+        "func": "msg.payload = msg.payload[0].ng\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1600,
+        "y": 760,
+        "wires": [
+            [
+                "9998ee802a70d974"
+            ]
+        ]
+    },
+    {
+        "id": "c1533e9cc98d8018",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "Query Data (Quality)",
+        "func": "var query = \"SELECT (actual/(actual + ng)) * 100 as quality FROM actual_data order by id desc limit 1;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 860,
+        "wires": [
+            [
+                "204af9c2e662ae6d"
+            ]
+        ]
+    },
+    {
+        "id": "be84f65cf7148e4b",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "e64a943abad2f087",
+        "name": "Set data",
+        "func": "var quality = msg.payload[0].quality || 0\n\nmsg.payload = quality.toFixed(0);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 860,
+        "wires": [
+            [
+                "314d605c0a67fb6d"
+            ]
+        ]
+    },
+    {
+        "id": "021068907e44c828",
+        "type": "ui_text",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "group": "fedd8e36bb3a0683",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Job No :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1520,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6934d0d6aca029ce",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "select job_no",
+        "func": "var query = \"SELECT job_no FROM job order by id desc limit 1;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 140,
+        "wires": [
+            [
+                "ab2b89d8da463e88"
+            ]
+        ]
+    },
+    {
+        "id": "ab2b89d8da463e88",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1010,
+        "y": 140,
+        "wires": [
+            [
+                "f5588c41ddab123b"
+            ]
+        ]
+    },
+    {
+        "id": "26c34b3328c2c714",
+        "type": "inject",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 550,
+        "y": 140,
+        "wires": [
+            [
+                "6934d0d6aca029ce",
+                "2f95afc0adf4570f",
+                "9b1491103bca6b33",
+                "d76378d28423faf3",
+                "340ff9e32bc4e66f",
+                "395a99b3724d11eb"
+            ]
+        ]
+    },
+    {
+        "id": "f5588c41ddab123b",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1210,
+        "y": 140,
+        "wires": [
+            [
+                "dcfaa3a1700fa61f"
+            ]
+        ]
+    },
+    {
+        "id": "dcfaa3a1700fa61f",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "set data",
+        "func": "msg.payload = msg.payload[0].job_no\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 140,
+        "wires": [
+            [
+                "021068907e44c828"
+            ]
+        ]
+    },
+    {
+        "id": "47f159a49c132d56",
+        "type": "ui_text",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "group": "fedd8e36bb3a0683",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Machine :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1520,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2f95afc0adf4570f",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "select machine",
+        "func": "var query = \"SELECT M.machine_name FROM job J\" +\n            \" inner join machine M on M.id = J.machine_id\" +\n            \" order by J.id desc limit 1;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 200,
+        "wires": [
+            [
+                "86fe06d0bbf09ddf"
+            ]
+        ]
+    },
+    {
+        "id": "86fe06d0bbf09ddf",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1010,
+        "y": 200,
+        "wires": [
+            [
+                "61e78f06667836a6"
+            ]
+        ]
+    },
+    {
+        "id": "61e78f06667836a6",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1210,
+        "y": 200,
+        "wires": [
+            [
+                "850189c1d227713e"
+            ]
+        ]
+    },
+    {
+        "id": "850189c1d227713e",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "set data",
+        "func": "msg.payload = msg.payload[0].machine_name\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 200,
+        "wires": [
+            [
+                "47f159a49c132d56"
+            ]
+        ]
+    },
+    {
+        "id": "ae73d2c03ec758c7",
+        "type": "ui_text",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "group": "fedd8e36bb3a0683",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Product :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1520,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9b1491103bca6b33",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "select product",
+        "func": "var query = \"SELECT P.product_name FROM job J\" +\n            \" inner join product P on P.id = J.product_id\" +\n            \" order by J.id desc limit 1;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 280,
+        "wires": [
+            [
+                "0fae57555eedd2c6"
+            ]
+        ]
+    },
+    {
+        "id": "0fae57555eedd2c6",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1010,
+        "y": 280,
+        "wires": [
+            [
+                "b9141129b83fa4cc"
+            ]
+        ]
+    },
+    {
+        "id": "b9141129b83fa4cc",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1210,
+        "y": 280,
+        "wires": [
+            [
+                "87d0661f8a9cf210"
+            ]
+        ]
+    },
+    {
+        "id": "87d0661f8a9cf210",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "set data",
+        "func": "msg.payload = msg.payload[0].product_name\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 280,
+        "wires": [
+            [
+                "ae73d2c03ec758c7"
+            ]
+        ]
+    },
+    {
+        "id": "980d93d35c3ce820",
+        "type": "ui_text",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "group": "fedd8e36bb3a0683",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Employee :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1510,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d76378d28423faf3",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "select emp_name",
+        "func": "var query = \"SELECT concat(E.fname, ' ', E.lname) as emp_name FROM job J\" +\n            \" inner join employee E on E.id = J.employee_id\" +\n            \" order by J.id desc limit 1;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 340,
+        "wires": [
+            [
+                "031657c9eea42a65"
+            ]
+        ]
+    },
+    {
+        "id": "031657c9eea42a65",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1010,
+        "y": 340,
+        "wires": [
+            [
+                "b292761652b9105c"
+            ]
+        ]
+    },
+    {
+        "id": "b292761652b9105c",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1210,
+        "y": 340,
+        "wires": [
+            [
+                "5b74372551d6d4b9"
+            ]
+        ]
+    },
+    {
+        "id": "5b74372551d6d4b9",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "set data",
+        "func": "msg.payload = msg.payload[0].emp_name\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 340,
+        "wires": [
+            [
+                "980d93d35c3ce820"
+            ]
+        ]
+    },
+    {
+        "id": "471e085aa89b1279",
+        "type": "ui_text",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "group": "fedd8e36bb3a0683",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Plan :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1530,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "340ff9e32bc4e66f",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "select plan",
+        "func": "var query = \"SELECT plan FROM iot_course.job order by id desc limit 1;\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 420,
+        "wires": [
+            [
+                "48d91de463ab5075"
+            ]
+        ]
+    },
+    {
+        "id": "48d91de463ab5075",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1010,
+        "y": 420,
+        "wires": [
+            [
+                "96d621c69de08e4e"
+            ]
+        ]
+    },
+    {
+        "id": "96d621c69de08e4e",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1210,
+        "y": 420,
+        "wires": [
+            [
+                "2af24fd2a73451a6"
+            ]
+        ]
+    },
+    {
+        "id": "2af24fd2a73451a6",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "set data",
+        "func": "msg.payload = msg.payload[0].plan\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 420,
+        "wires": [
+            [
+                "471e085aa89b1279"
+            ]
+        ]
+    },
+    {
+        "id": "1a3ae5060751ab2e",
+        "type": "ui_text",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "group": "fedd8e36bb3a0683",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Diff :",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1530,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "395a99b3724d11eb",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "cal diff",
+        "func": "var query = \"call cal_diff();\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 500,
+        "wires": [
+            [
+                "62239d404497e652"
+            ]
+        ]
+    },
+    {
+        "id": "62239d404497e652",
+        "type": "mysql",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 1010,
+        "y": 500,
+        "wires": [
+            [
+                "aadbd8eebe9e46b7"
+            ]
+        ]
+    },
+    {
+        "id": "aadbd8eebe9e46b7",
+        "type": "json",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1210,
+        "y": 500,
+        "wires": [
+            [
+                "7fc981636f861922"
+            ]
+        ]
+    },
+    {
+        "id": "7fc981636f861922",
+        "type": "function",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "set data",
+        "func": "msg.payload = msg.payload[0][0].diff\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1360,
+        "y": 500,
+        "wires": [
+            [
+                "1a3ae5060751ab2e"
+            ]
+        ]
+    },
+    {
+        "id": "f59b7eb9d1add545",
+        "type": "link in",
+        "z": "f06a68d491387491",
+        "g": "c39d2f3a5c82f007",
+        "name": "Plan in ",
+        "links": [],
+        "x": 515,
+        "y": 280,
+        "wires": [
+            [
+                "6934d0d6aca029ce",
+                "2f95afc0adf4570f",
+                "9b1491103bca6b33",
+                "d76378d28423faf3",
+                "340ff9e32bc4e66f",
+                "395a99b3724d11eb"
+            ]
+        ]
+    },
+    {
+        "id": "c953980bf31e16d2",
+        "type": "MySQLdatabase",
+        "name": "Industrial IoT Database",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "industrial_iot_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "613bd813100a6983",
+        "type": "ui_group",
+        "name": "Andon Board",
+        "tab": "0c35c7883a283b2e",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fedd8e36bb3a0683",
+        "type": "ui_group",
+        "name": "Report & Job Detail",
+        "tab": "0c35c7883a283b2e",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a7564ea35dc91ab5",
+        "type": "ui_group",
+        "name": "Breakdown",
+        "tab": "0c35c7883a283b2e",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5058971ca123ba53",
+        "type": "ui_group",
+        "name": "Report & Update breakdown",
+        "tab": "0c35c7883a283b2e",
+        "order": 4,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1dd20681aa6945de",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "iot_course",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "0c35c7883a283b2e",
+        "type": "ui_tab",
+        "name": "Industrial IoT Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

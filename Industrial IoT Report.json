@@ -1,0 +1,783 @@
+[
+    {
+        "id": "5cf52b14fecc3a56",
+        "type": "tab",
+        "label": "Industrial IoT Report",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "05ff393d9c55111a",
+        "type": "ui_date_picker",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "label": "Start",
+        "group": "52098bc9b3d56a6f",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "e5fd770d8f3ce250"
+            ]
+        ]
+    },
+    {
+        "id": "d8c9d166aa7b2070",
+        "type": "ui_date_picker",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "label": "Finish",
+        "group": "52098bc9b3d56a6f",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "86b52dfd6be33bae"
+            ]
+        ]
+    },
+    {
+        "id": "e5fd770d8f3ce250",
+        "type": "change",
+        "z": "5cf52b14fecc3a56",
+        "name": "start_date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "start_date",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "6dd9bf03fd985c28"
+            ]
+        ]
+    },
+    {
+        "id": "86b52dfd6be33bae",
+        "type": "change",
+        "z": "5cf52b14fecc3a56",
+        "name": "finish_date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "finish_date",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "6dd9bf03fd985c28"
+            ]
+        ]
+    },
+    {
+        "id": "6dd9bf03fd985c28",
+        "type": "join",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "1",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "6d900a735823b5d1"
+            ]
+        ]
+    },
+    {
+        "id": "6d900a735823b5d1",
+        "type": "json",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 650,
+        "y": 160,
+        "wires": [
+            [
+                "d7b181efe08af8e7"
+            ]
+        ]
+    },
+    {
+        "id": "d7b181efe08af8e7",
+        "type": "function",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "func": "var start_date = msg.payload.start_date\nvar finish_date = msg.payload.finish_date\n\nflow.set('start_date', start_date)\nflow.set('finish_date', finish_date)\n\nvar s_date = new Date(start_date).getDate();\nvar s_month = new Date(start_date).getMonth() + 1;\nvar s_year = new Date(start_date).getFullYear();\n\nvar f_date = new Date(finish_date).getDate();\nvar f_month = new Date(finish_date).getMonth() + 1;\nvar f_year = new Date(finish_date).getFullYear();\n\nstart_date = s_year + '-' + s_month + '-' + s_date\nfinish_date = f_year + '-' + f_month + '-' + f_date\n\nvar query = \"call breakdown_report('\" + start_date + \"','\" + finish_date + \"');\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "ea7da725fd5c75e3"
+            ]
+        ]
+    },
+    {
+        "id": "ea7da725fd5c75e3",
+        "type": "ui_button",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "group": "52098bc9b3d56a6f",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "ค้นหา",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 240,
+        "wires": [
+            [
+                "c701c53f3cba47a4",
+                "53bcc3092df58d9d",
+                "f925059e9a595e56"
+            ]
+        ]
+    },
+    {
+        "id": "c701c53f3cba47a4",
+        "type": "mysql",
+        "z": "5cf52b14fecc3a56",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 870,
+        "y": 240,
+        "wires": [
+            [
+                "64ef7614382b3350"
+            ]
+        ]
+    },
+    {
+        "id": "64ef7614382b3350",
+        "type": "json",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1070,
+        "y": 240,
+        "wires": [
+            [
+                "c5dc3b1aa0fcd1c8"
+            ]
+        ]
+    },
+    {
+        "id": "c5dc3b1aa0fcd1c8",
+        "type": "ui_template",
+        "z": "5cf52b14fecc3a56",
+        "group": "9d3283891bfed51b",
+        "name": "",
+        "order": 1,
+        "width": 12,
+        "height": 13,
+        "format": "<html>\n   <head>\n          <title> {{ title }}</title>\n   </head>\n   <body>\n        <table border = \"1\">\n            <tr>\n                <th>Breakdown Start</th>\n                <th>Breakdown Finish</th>\n                <th>Remark</th>\n                <th>Time</th>\n            </tr>\n            <tr ng-repeat = \"x in msg.payload[0]\">\n                <td align=\"center\">{{x.breakdown_start}}</td>\n                <td align=\"center\">{{x.breakdown_finish}}</td>\n                <td align=\"center\">{{x.remark}}</td>\n                <td align=\"center\">{{x.breakdown_time}}</td>\n            </tr>\n        </table>\n   </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1220,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53bcc3092df58d9d",
+        "type": "function",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "func": "var start_date = flow.get('start_date')\nvar finish_date = flow.get('finish_date')\n\nvar s_date = new Date(start_date).getDate();\nvar s_month = new Date(start_date).getMonth() + 1;\nvar s_year = new Date(start_date).getFullYear();\n\nvar f_date = new Date(finish_date).getDate();\nvar f_month = new Date(finish_date).getMonth() + 1;\nvar f_year = new Date(finish_date).getFullYear();\n\nstart_date = s_year + '-' + s_month + '-' + s_date\nfinish_date = f_year + '-' + f_month + '-' + f_date\n\nvar query = \"call breakdown_sum('\" + start_date + \"','\" + finish_date + \"');\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 360,
+        "wires": [
+            [
+                "3275e0b919f31e98"
+            ]
+        ]
+    },
+    {
+        "id": "3275e0b919f31e98",
+        "type": "mysql",
+        "z": "5cf52b14fecc3a56",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 870,
+        "y": 360,
+        "wires": [
+            [
+                "79e2909fb3cb00cc"
+            ]
+        ]
+    },
+    {
+        "id": "79e2909fb3cb00cc",
+        "type": "json",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1070,
+        "y": 360,
+        "wires": [
+            [
+                "59ecce96d36ab5f9",
+                "d78312150b5bedfa"
+            ]
+        ]
+    },
+    {
+        "id": "59ecce96d36ab5f9",
+        "type": "ui_template",
+        "z": "5cf52b14fecc3a56",
+        "group": "52098bc9b3d56a6f",
+        "name": "",
+        "order": 23,
+        "width": 10,
+        "height": 4,
+        "format": "<html>\n   <head>\n          <title> {{ title }}</title>\n   </head>\n   <body>\n        <table border = \"1\">\n            <tr>\n                <th>Remark</th>\n                <th>Breakdown (Second))</th>\n                <th>Breakdown (Minute)</th>\n                <th>Breakdown (Time)</th>\n            </tr>\n            <tr ng-repeat = \"x in msg.payload[0]\">\n                <td align=\"center\">{{x.remark}}</td>\n                <td align=\"center\">{{x.breakdown_time_sec}}</td>\n                <td align=\"center\">{{x.breakdown_time_min}}</td>\n                <td align=\"center\">{{x.breakdown_time}}</td>\n            </tr>\n        </table>\n   </body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1220,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36adbcad5d9ebb4b",
+        "type": "ui_chart",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "group": "52098bc9b3d56a6f",
+        "order": 5,
+        "width": 10,
+        "height": 4,
+        "label": "Summary Breakdown",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1260,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d78312150b5bedfa",
+        "type": "function",
+        "z": "5cf52b14fecc3a56",
+        "name": "set data",
+        "func": "var total_case = msg.payload[0].length\nvar data_set = []\nvar series = []\nvar data = []\nfor(var i = 0 ; i < total_case ; i++ ){\n    series.push([msg.payload[0][i].remark])\n    data.push([msg.payload[0][i].breakdown_time_sec])\n}\ndata_set.push({\n    \"series\": series,\n    \"data\": data,\n    \"labels\": [ \"Breakdown Time\" ]\n})\n\nmsg.payload = data_set\nreturn msg;\n\n// if(total_case == 1){\n//     msg.payload = [{\n//     \"series\": [ msg.payload[0][0].remark ],\n//     \"data\": [ [msg.payload[0][0].total] ],\n//     \"labels\": [ \"Breakdown case\" ]\n// }]\n// }else if(total_case == 2){\n//     msg.payload = [{\n//     \"series\": [ msg.payload[0][0].remark, \n//                 msg.payload[0][1].remark],\n//     \"data\": [ [msg.payload[0][0].total],\n//                 [msg.payload[0][1].total] ],\n//     \"labels\": [ \"Breakdown case\" ]\n// }]\n// }else if(total_case == 3){\n//     msg.payload = [{\n//     \"series\": [ msg.payload[0][0].remark, \n//                 msg.payload[0][1].remark,\n//                 msg.payload[0][2].remark],\n//     \"data\": [ [msg.payload[0][0].total],\n//                 [msg.payload[0][1].total],\n//                 [msg.payload[0][2].total] ],\n//     \"labels\": [ \"Breakdown case\" ]\n// }]\n// }else if(total_case == 4){\n//     msg.payload = [{\n//     \"series\": [ msg.payload[0][0].remark, \n//                 msg.payload[0][1].remark,\n//                 msg.payload[0][2].remark,\n//                 msg.payload[0][3].remark],\n//     \"data\": [ [msg.payload[0][0].total],\n//                 [msg.payload[0][1].total],\n//                 [msg.payload[0][2].total],\n//                 [msg.payload[0][3].total] ],\n//     \"labels\": [ \"Breakdown case\" ]\n// }]\n// }\n\n// return msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 420,
+        "wires": [
+            [
+                "36adbcad5d9ebb4b"
+            ]
+        ]
+    },
+    {
+        "id": "cf2cc8393845d636",
+        "type": "ui_chart",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "group": "52098bc9b3d56a6f",
+        "order": 14,
+        "width": 10,
+        "height": 4,
+        "label": "Count Breakdown",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1250,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13dba4074343b69a",
+        "type": "function",
+        "z": "5cf52b14fecc3a56",
+        "name": "set data",
+        "func": "var total_case = msg.payload[0].length\nvar data_set = []\nvar series = []\nvar data = []\nfor(var i = 0 ; i < total_case ; i++ ){\n    series.push([msg.payload[0][i].remark])\n    data.push([msg.payload[0][i].total])\n}\ndata_set.push({\n    \"series\": series,\n    \"data\": data,\n    \"labels\": [ \"Breakdown case\" ]\n})\n\nmsg.payload = data_set\nreturn msg;\n\n// if(total_case == 1){\n//     msg.payload = [{\n//     \"series\": [ msg.payload[0][0].remark ],\n//     \"data\": [ [msg.payload[0][0].total] ],\n//     \"labels\": [ \"Breakdown case\" ]\n// }]\n// }else if(total_case == 2){\n//     msg.payload = [{\n//     \"series\": [ msg.payload[0][0].remark, \n//                 msg.payload[0][1].remark],\n//     \"data\": [ [msg.payload[0][0].total],\n//                 [msg.payload[0][1].total] ],\n//     \"labels\": [ \"Breakdown case\" ]\n// }]\n// }else if(total_case == 3){\n//     msg.payload = [{\n//     \"series\": [ msg.payload[0][0].remark, \n//                 msg.payload[0][1].remark,\n//                 msg.payload[0][2].remark],\n//     \"data\": [ [msg.payload[0][0].total],\n//                 [msg.payload[0][1].total],\n//                 [msg.payload[0][2].total] ],\n//     \"labels\": [ \"Breakdown case\" ]\n// }]\n// }else if(total_case == 4){\n//     msg.payload = [{\n//     \"series\": [ msg.payload[0][0].remark, \n//                 msg.payload[0][1].remark,\n//                 msg.payload[0][2].remark,\n//                 msg.payload[0][3].remark],\n//     \"data\": [ [msg.payload[0][0].total],\n//                 [msg.payload[0][1].total],\n//                 [msg.payload[0][2].total],\n//                 [msg.payload[0][3].total] ],\n//     \"labels\": [ \"Breakdown case\" ]\n// }]\n// }\n\n// return msg;\n\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 540,
+        "wires": [
+            [
+                "cf2cc8393845d636"
+            ]
+        ]
+    },
+    {
+        "id": "f925059e9a595e56",
+        "type": "function",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "func": "var start_date = flow.get('start_date')\nvar finish_date = flow.get('finish_date')\n\nvar s_date = new Date(start_date).getDate();\nvar s_month = new Date(start_date).getMonth() + 1;\nvar s_year = new Date(start_date).getFullYear();\n\nvar f_date = new Date(finish_date).getDate();\nvar f_month = new Date(finish_date).getMonth() + 1;\nvar f_year = new Date(finish_date).getFullYear();\n\nstart_date = s_year + '-' + s_month + '-' + s_date\nfinish_date = f_year + '-' + f_month + '-' + f_date\n\nvar query = \"call breakdown_count('\" + start_date + \"','\" + finish_date + \"');\"\n\nmsg.topic = String(query)\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 480,
+        "wires": [
+            [
+                "aa2029efe9b1fe59"
+            ]
+        ]
+    },
+    {
+        "id": "aa2029efe9b1fe59",
+        "type": "mysql",
+        "z": "5cf52b14fecc3a56",
+        "mydb": "c953980bf31e16d2",
+        "name": "",
+        "x": 870,
+        "y": 480,
+        "wires": [
+            [
+                "b2a04f1e25460510"
+            ]
+        ]
+    },
+    {
+        "id": "b2a04f1e25460510",
+        "type": "json",
+        "z": "5cf52b14fecc3a56",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 1070,
+        "y": 480,
+        "wires": [
+            [
+                "13dba4074343b69a"
+            ]
+        ]
+    },
+    {
+        "id": "83e2c9a8f237f4b6",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8ce0214ec97845ab",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c79fd54cf8e4e16f",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a5ba03131063c78e",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "de42d0a38258993a",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "75a5f855fd55a2e9",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3ed2e025a2041e68",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aacf3203ea6a9f43",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "862cea7faf4456d4",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e418c9c131774376",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1da1d46c1d166f16",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "03b71fba9e6b1d9a",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "31ba268f4b65ca4d",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7ad9263023b0b1e3",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "31e465a4acb0ac4c",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4c3551921c3f4764",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4e1243ab3bef0abe",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ae0074994dbfa5a8",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d015e0bdcf62afbb",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 25,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "85a3464c5d699fe5",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b558fa4cc67c987a",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0c49caa4b64c84b2",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 28,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "93fcdde597a5fc1d",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 29,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "94e32c9124ab2995",
+        "type": "ui_spacer",
+        "z": "5cf52b14fecc3a56",
+        "name": "spacer",
+        "group": "52098bc9b3d56a6f",
+        "order": 30,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "52098bc9b3d56a6f",
+        "type": "ui_group",
+        "name": "Search",
+        "tab": "574ce02a3b2cb80a",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c953980bf31e16d2",
+        "type": "MySQLdatabase",
+        "name": "Industrial IoT Database",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "industrial_iot_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "9d3283891bfed51b",
+        "type": "ui_group",
+        "name": "Report",
+        "tab": "574ce02a3b2cb80a",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "574ce02a3b2cb80a",
+        "type": "ui_tab",
+        "name": "Industrial IoT Report",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
